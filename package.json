@@ -2,7 +2,7 @@
   "name": "even-columns",
   "displayName": "Even Columns",
   "description": "One-click status-bar button to make all editor columns equal width.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "andrewaltair",
   "license": "MIT",
   "author": "Andrew Altair <andr3waltair@gmail.com>",

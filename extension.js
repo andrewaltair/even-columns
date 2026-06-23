@@ -14,7 +14,7 @@ function activate(context) {
   context.subscriptions.push(
     statusItem,
     vscode.commands.registerCommand('evenColumns.run', async () => {
-      // Built-in: "Reset Editor Group Sizes" — equalizes all editor group widths.
+      // Built-in "Reset Editor Group Sizes": equalizes all editor group widths.
       await vscode.commands.executeCommand('workbench.action.evenEditorWidths');
     }),
   );
