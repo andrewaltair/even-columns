@@ -1,8 +1,8 @@
 {
   "name": "even-columns",
   "displayName": "Even Columns",
-  "description": "One-click status-bar button to make all editor columns equal width.",
-  "version": "0.1.1",
+  "description": "Equalize all editor column widths from a status-bar button or command. Configurable button label, side, and visibility.",
+  "version": "0.2.0",
   "publisher": "andrewaltair",
   "license": "MIT",
   "author": "Andrew Altair <andr3waltair@gmail.com>",
@@ -35,8 +35,33 @@
         "command": "evenColumns.run",
         "title": "Even Columns: Equalize Editor Column Widths",
         "icon": "$(split-horizontal)"
+      },
+      {
+        "command": "evenColumns.toggleStatusBar",
+        "title": "Even Columns: Toggle Status Bar Button"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Even Columns",
+      "properties": {
+        "evenColumns.showStatusBar": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the Even Columns button in the status bar."
+        },
+        "evenColumns.buttonText": {
+          "type": "string",
+          "default": "Even",
+          "description": "Label shown on the status-bar button, after the icon."
+        },
+        "evenColumns.alignment": {
+          "type": "string",
+          "enum": ["left", "right"],
+          "default": "right",
+          "description": "Which side of the status bar the button sits on."
+        }
+      }
+    }
   },
   "scripts": {
     "package": "vsce package"
