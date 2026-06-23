@@ -1,0 +1,47 @@
+{
+  "name": "even-columns",
+  "displayName": "Even Columns",
+  "description": "One-click status-bar button to make all editor columns equal width.",
+  "version": "0.1.0",
+  "publisher": "andrewaltair",
+  "license": "MIT",
+  "author": "Andrew Altair <andr3waltair@gmail.com>",
+  "icon": "icon.png",
+  "galleryBanner": { "color": "#0d1117", "theme": "dark" },
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Other"],
+  "keywords": [
+    "editor",
+    "layout",
+    "columns",
+    "split",
+    "resize",
+    "equal width",
+    "editor groups"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewaltair/even-columns.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andrewaltair/even-columns/issues"
+  },
+  "homepage": "https://github.com/andrewaltair/even-columns#readme",
+  "main": "./extension.js",
+  "activationEvents": ["onStartupFinished"],
+  "contributes": {
+    "commands": [
+      {
+        "command": "evenColumns.run",
+        "title": "Even Columns: Equalize Editor Column Widths",
+        "icon": "$(split-horizontal)"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.9.2"
+  }
+}
